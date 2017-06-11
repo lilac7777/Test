@@ -1,6 +1,6 @@
 # py-R-FCN
 R-FCN: Object Detection via Region-based Fully Convolutional Networks
-
+testtest
 
 **It is highly recommended to use the [MXNet version of R-FCN/Deformable R-FCN](https://github.com/msracver/Deformable-ConvNets), which supports multi-GPU train/test.**
 
@@ -16,7 +16,7 @@ There are slight differences between py-R-FCN and the official R-FCN implementat
  - py-R-FCN supports both join training and alternative optimization of R-FCN.
 
 #### Some modification
-
+vfvfvfv
 The original py-faster-rcnn uses class-aware bounding box regression. However, R-FCN use class-agnostic bounding box regression to reduce model complexity. So I add a configuration AGNOSTIC into fast_rcnn/config.py, and the default value is False. You should set it to True both on train and test phase if you want to use class-agnostic training and test. 
 
 OHEM need all rois to select the hard examples, so I changed the sample strategy, set `BATCH_SIZE: -1` for OHEM, otherwise OHEM would not take effect.
